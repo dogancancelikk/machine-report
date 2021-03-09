@@ -8,7 +8,8 @@ export const login = (username: string, password:string) : Promise<any> =>{
             'Content-Type': 'application/x-www-form-urlencoded'
         }
     }
-    const url: string = (process.env.REACT_APP_LOGIN_URL as string);
+    //const url: string = (process.env.REACT_APP_LOGIN_URL as string);
+    const url  = "http://dev.prowmes.com/panel/login";
 
     const params = new URLSearchParams()
 
